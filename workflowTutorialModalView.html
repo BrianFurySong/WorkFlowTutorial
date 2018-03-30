@@ -1,0 +1,715 @@
+<style>
+    .ibox-content {
+        border-radius: 10px;
+    }
+</style>
+
+<div class="col-sm-12 ibox-content" ng-show="$ctrl.startHere">
+    <div class="text-center" ng-show="$ctrl.broker">
+        <div class="ibox-content blue-bg ibox-heading">
+            <h3>Broker</h3>
+            <small>Inviting people to your team.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+                        <p style="text-align: justify;">
+                            This is the step where you will be making your team.
+                            Only subscribers have the option to make a new team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Team Management" element on the side bar and create a team by clicking
+                            the "Create A New Team" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            After you have created a team, find your team in the list of teams under the "Current
+                            Teams" headline. Invite your desired team members to the team by using the "+" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>In Addition</strong></p>
+                        <p style="text-align: justify;">
+                            Type the name of the team member in the search bar and it will automatically show a list
+                            of members. The "Team Lead" option clarifies the project lead of the team. Click
+                            the "Add" button to add and repeat this process until you are satisfied with
+                            the members in your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="$ctrl.client">
+        <div class="ibox-content navy-bg ibox-heading">
+            <h3>Client</h3>
+            <small>Inviting people to your team.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            This is the step where you will be making your team.
+                            Only a subscriber will have the option to create a new team.
+                            If you are not a subscriber, please wait until you are invited
+                            to a team by a subscriber (most likely your broker). If you are
+                            a client who has paid for a subscription, then move on to
+                            "Step 1"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Team Management" element on the side bar and create a team by clicking
+                            the "Create A New Team" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            After you have created a team, find your team in the list of teams under the "Current
+                            Teams" headline. Invite your desired team members to the team by using the "+" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>In Addition</strong></p>
+                        <p style="text-align: justify;">
+                            Type the name of the team member in the search bar and it will automatically show a list
+                            of members. The "Team Lead" option clarifies the project lead of the team. Click
+                            the "Add" button to add and repeat this process until you are satisfied with
+                            the members in your team.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 ibox-content" ng-show="$ctrl.stepTwo">
+    <div class="text-center" ng-show="$ctrl.broker">
+        <div class="ibox-content blue-bg ibox-heading">
+            <h3>Broker</h3>
+            <small>Creating and managing projects.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            Either the client or the broker is able to create a project.
+                            Creating the project depends on whoever has the specific information
+                            on the requirements for the desired property. If the client  has agreed to
+                            create the project, you, as the broker will build the timeline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            If you, as the broker, is in charge of creating a project, start with creating
+                            a project for your team. Click "Project Overview" on the side bar then find
+                            your team by name.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Create Project" button under your team name. Fill in the requirement form
+                            then click "Sumbit New Search".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 3</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Add Property" button under your team name, then fill in the
+                            form with the address and then click the "Add" button. Then fill in the rest of the
+                            form with required information then click "Add property".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 4</strong></p>
+                        <p style="text-align: justify;">
+                            In this step, upload any files pertaining to this property by clicking "Select File"
+                            then click "Upload File". (You may upload multiple files) Repeat adding properties
+                            by clicking the "Add Another Property" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 5</strong></p>
+                        <p style="text-align: justify;">
+                            Add a timeline by clicking the "Add Timeline" button.
+                            (You are able to change the timeline by clicking "Change Template")
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="$ctrl.client">
+        <div class="ibox-content navy-bg ibox-heading">
+            <h3>Client</h3>
+            <small>Creating and managing projects.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            Either the client or the broker is able to create a project. Creating the project
+                            depends on whoever has the specific information on the requirements for the
+                            desired property. There are specific fields that are reqired to add a property,
+                            if you are unsure or you do not have sufficient information to add a property,
+                            please contact your broker. Continue to Step 1 to add a property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Click "Project Overview" on the side bar then find your team by name.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Create Project" next to your team name. Fill in the requirement form
+                            then click "Sumbit New Search".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 3</strong></p>
+                        <p style="text-align: justify;">
+                            In this step, upload any files pertaining to this property by clicking "Select File"
+                            then click "Upload File". (You may upload multiple files) Repeat adding properties
+                            by clicking the "Add Another Property" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 4</strong></p>
+                        <p style="text-align: justify;">
+                            If you wish to add a timeline for yourself, click the "Add Timeline" button (You are able
+                            to change the timeline by clicking "Change Template"). A timeline is a tool designed to
+                            facilitate the moving process by generating a chronological list of tasks required during
+                            the moving process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 ibox-content" ng-show="$ctrl.stepThree">
+    <div class="text-center" ng-show="$ctrl.broker">
+        <div class="ibox-content blue-bg ibox-heading">
+            <h3>Broker</h3>
+            <small>Setting the tour date.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            As the broker, you will wait until the client sets the tour date.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Once the client sets the tour date, a proposed date will appear in your team box. Click
+                            the "Edit Tour" button and you have the option to approve the tour date or to change the time.
+                            If you decide to change the time, click the "Change Time" button, change the date and time, and
+                            approve each property or click the "Approve All" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="$ctrl.client">
+        <div class="ibox-content navy-bg ibox-heading">
+            <h3>Client</h3>
+            <small>Confirming the tour date.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            Setting and confirming the tour date may be complicating. Please pay attention to the
+                            date as it may change depending on the broker's availability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            As the client, you are able to suggest the tour date by clicking the "Create Tour Date" button.
+                            In the next screen, click the "Pick Tour Date" button on the lower left corner of the page.
+                            Set the date, start time and end time then click the "Save" button. You will have to wait until
+                            the broker checks the time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            In the box where your team is set, click the "Edit Tour" button and in the next screen,
+                            you now will have the option to comfirm the tour date. If you wish to change the time again,
+                            then click the "Change Time" button, if you wish to confirm, then click the "Confirm" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 3</strong></p>
+                        <p style="text-align: justify;">
+                            After going on the tour of your properties, you may write down notes about the property but
+                            clicking the "Tour Notes" button where the "Confirm" button was in your tour date page. After
+                            clicking the "Tour Notes" button, click the "Add Notes" button on the lower right corner of
+                            the page then write in your desired message in the text area and click the "Add Note" button.
+                            You may even upload a file by clicking the "Select File" button and uploading a file.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 ibox-content" ng-show="$ctrl.stepFour">
+    <div class="text-center" ng-show="$ctrl.broker">
+        <div class="ibox-content blue-bg ibox-heading">
+            <h3>Broker</h3>
+            <small>Touring</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            After touring the properties, the client will add notes about each
+                            property. Please read through and adjust if needed to meet their needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="$ctrl.client">
+        <div class="ibox-content navy-bg ibox-heading">
+            <h3>Client</h3>
+            <small>Touring and Adding Notes</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            During the tour, you may take notes on each property
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            click the "Add Note" button and submit notes on the property as well as
+                            upload files relating to the property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-12 ibox-content" ng-show="$ctrl.finalStep">
+    <div class="text-center" ng-show="$ctrl.broker">
+        <div class="ibox-content blue-bg ibox-heading">
+            <h3>Broker</h3>
+            <small>Sending the proposal.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            After touring the properties, the client will request proposals for the
+                            properties they are interested in. When the client requests a proposal, a link "Proposals"
+                            will appear next to the 'Project Status' tag.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Click the "Proposals" link and click the "Create Lease Proposal" button to
+                            fill out the proposal form and upload a proposal then click "Create Lease Proposal".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            If the client rejects the proposal, it will let you know that it was rejected in
+                            the "Edit Lease Proposal" button at the bottom of the property. Edit the proposal
+                            and upload a new proposal then click the "Update Lease Proposal" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 3</strong></p>
+                        <p style="text-align: justify;">
+                            If the client accepts the proposal, you will need to upload a counter from the landlord.
+                            Do this by first uploading a landlord proposal by clicking the "Select File" button.
+                            After the file is uploaded, click the "Upload Counter" button
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 4</strong></p>
+                        <p style="text-align: justify;">
+                            If the client rejects the landlord proposal, the previous steps are repeated until the
+                            proposal is approved by the client. When the client approves the proposal from the
+                            landlord, you will see a "Lease Drafts" link at the bottom of the list next to the 'Project
+                            Status' tag. Click the "Lease Drafts" link and then upload the lease draft by clicking
+                            "Select File", upload the lease then click the "Upload Lease Draft" button.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" ng-show="$ctrl.client">
+        <div class="ibox-content navy-bg ibox-heading">
+            <h3>Client</h3>
+            <small>Requesting the proposal.</small>
+        </div>
+        <div class="ibox-content inspinia-timeline text-left">
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content no-top-border">
+                        <p class="m-b-xs"><strong>Introduction</strong></p>
+
+                        <p style="text-align: justify;">
+                            After the touring the properties, you will be able to request a propsal
+                            from the desired property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 1</strong></p>
+                        <p style="text-align: justify;">
+                            Click on the "Proposal" link next to the 'Project Status' tag (this link will only
+                            appear after the tour date has passed).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 2</strong></p>
+                        <p style="text-align: justify;">
+                            In this screen choose the property or properties that you would like the broker to
+                            draft a proposal by clicking the "Request Proposal" at the bottom of each property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 3</strong></p>
+                        <p style="text-align: justify;">
+                            After the broker uploads the proposal, go back into the "Properties" page by clicking on
+                            the "Proposal" link next to the 'Project Status' tag. Click "View Proposals" at the bottom
+                            of each property and then you may either "Approve" or "Reject and Add Note".
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 4</strong></p>
+                        <p style="text-align: justify;">
+                            If you decide to reject the proposal, it will allow you to write a note to the broker
+                            about your requests.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 5</strong></p>
+                        <p style="text-align: justify;">
+                            If you want to accept the proposal, click the "Approve" button and wait for the landlord
+                            counter proposal from the broker.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 6</strong></p>
+                        <p style="text-align: justify;">
+                            Look at the proposal and using the drop down menu on the properties page, approve or reject by
+                            selecting either "Yes" or "No". If you decide to reject the proposal, these steps are repeated
+                            until you approve the landlord proposal.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="row">
+                    <div class="col-xs-3 date">
+                        <i class="fa fa-thumb-tack"></i>
+                    </div>
+                    <div class="col-xs-7 content">
+                        <p class="m-b-xs"><strong>Step 7</strong></p>
+                        <p style="text-align: justify;">
+                            If you approve the proposal by selecting "Yes" on the drop down menu, the "Submit Signed Documents"
+                            button will appear. Click the "Submit Signed Documents" button to end your long journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
